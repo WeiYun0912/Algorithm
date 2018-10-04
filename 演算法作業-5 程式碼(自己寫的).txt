@@ -1,0 +1,47 @@
+//最後時間0.0000
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Unique2 {
+public static void main(String[]argv) {
+	ArrayList<Integer> list1 = new ArrayList<>();   //裝原始資料用
+	ArrayList<Integer> list2 = new ArrayList<>();   //裝去完重複以後
+	Scanner sc = new Scanner(System.in);
+	System.out.print("輸入需要幾個數字：");
+	
+	int num1 = sc.nextInt();
+	int num2 = 0;
+	
+	for(int i=0;i<num1;i++) { 
+		num2 = sc.nextInt();
+		list1.add(num2); //輸入值丟到list1裡面
+	}
+	long startTime = -System.currentTimeMillis();	
+	
+	for(int i=0;i<list1.size();i++) { 
+		if(!list2.contains(list1.get(i))) { //list2裡面要是不包含list1的值
+			list2.add(list1.get(i)); //就把list1的數字+到list2裡面
+		}
+	}
+	
+	if(list1.size() != list2.size()) {
+		System.out.println("該清單元素有重複！");
+	}else {
+		System.out.println("該清單所有元素都是唯一！");
+	}
+	
+	startTime += System.currentTimeMillis();
+	
+	System.out.printf("執行完花了 %.4f",startTime*1.0/1000);
+	
+//	for(int s : repeatList1) {
+//		System.out.println(s);
+//		
+//	}
+	
+//	System.out.println(list1.size()); //最後比對size 要是沒有重複的話size會一樣
+//	System.out.println(list2.size()); //要是有重複 size會不一樣
+	
+	
+}
+}

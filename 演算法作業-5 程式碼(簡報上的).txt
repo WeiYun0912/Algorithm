@@ -1,0 +1,39 @@
+//最後時間 有時0.0000 有時 0.0010
+import java.util.Scanner;
+
+public class Unique {
+public static void main(String []argv) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("輸入陣列長度:");
+	int num = sc.nextInt();
+	int count = 1;
+	int A [] = new int[num];
+	
+	for(int i=0;i<A.length;i++) {
+		A[i] = sc.nextInt();
+	}
+	
+	long startTime = -System.currentTimeMillis();
+	
+	A:for(int i=0;i<=num-2;i++) {
+		for(int j=i+1;j<=num-1;j++) {
+//			System.out.println("i="+A[i]+", j="+A[j]);
+			if(A[i] == A[j]) {
+				count = 0;
+				break A;
+			}
+		}
+	}
+	if(count == 0) {
+		System.out.println("該陣列元素有重複！");
+	}else {
+		System.out.println("該陣列所有元素都是唯一！");
+	}
+
+	startTime += System.currentTimeMillis();
+	
+	System.out.printf("執行完花了 %.4f",startTime*1.0/1000);
+
+	
+}
+}
