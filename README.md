@@ -1,19 +1,16 @@
 Algorithm
 ===
-
-²Ä¤@¶g¡G
-
-1. BinaryCount (­pºâ¼Æ¦r¬O´X­Ó2¶i¦ì¼Æ¦r²Õ¦¨)
-2. Binary (¤G¤¸·j´Mªk)
-3. Euclidean (¼Ú°ò¨½¼wºtºâªk)
-4. Exchange (¥æ´«±Æ§Çªk)
-5. Fib (¶O¤ó¼Æ¦C »¼°j)
-6. FibForLoop (¶O¤ó¼Æ¦C °j°é)
-7. FibIterative (¶O¤ó¼Æ¦C Å|¥N)
-8. MatrixMultiplication (¯x°}¬Û­¼)
-9. MaxElement (§ä°}¦C¤¤³Ì¤jªº¼Æ¦r)
-10. Polynomial (¦h¶µ¦¡­pºâ)
-11. RussianMultiplication («X¦¡­¼ªk)
-12. Seqsearch (´`§Ç·j´Mªk)
-13. Sieve (¿z¤lºtºâªk §ä½è¼Æ)
-14. Unique (§ä°}¦C¬O§_¦³­«½Æ¼Æ¦r)
+1. BinaryCount (è¨ˆç®—æ•¸å­—æ˜¯å¹¾å€‹2é€²ä½æ•¸å­—çµ„æˆ)
+2. Binary (äºŒå…ƒæœå°‹æ³•)
+3. Euclidean (æ­åŸºé‡Œå¾·æ¼”ç®—æ³•)
+4. Exchange (äº¤æ›æ’åºæ³•)
+5. Fib (è²»æ°æ•¸åˆ— éè¿´)
+6. FibForLoop (è²»æ°æ•¸åˆ— è¿´åœˆ)
+7. FibIterative (è²»æ°æ•¸åˆ— ç–Šä»£)
+8. MatrixMultiplication (çŸ©é™£ç›¸ä¹˜)
+9. MaxElement (æ‰¾é™£åˆ—ä¸­æœ€å¤§çš„æ•¸å­—)
+10. Polynomial (å¤šé …å¼è¨ˆç®—)
+11. RussianMultiplication (ä¿„å¼ä¹˜æ³•)
+12. Seqsearch (å¾ªåºæœå°‹æ³•)
+13. Sieve (ç¯©å­æ¼”ç®—æ³• æ‰¾è³ªæ•¸)
+14. Unique (æ‰¾é™£åˆ—æ˜¯å¦æœ‰é‡è¤‡æ•¸å­—)
