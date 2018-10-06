@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class RussianMultiplication {
+public static void main(String[]argv) {
+	Scanner sc =  new Scanner(System.in);
+	System.out.printf("俄式乘法 \n請輸入n和m:");
+	int n = sc.nextInt();
+	int m = sc.nextInt();
+	int sum = 0;
+	boolean is = true;
+	while(is) {
+		System.out.println("n="+n+", m="+m);
+		n /=2; //n除2
+		m *=2; //m乘2
+		
+		if(n%2!=0) { //判斷 是不是不是整除  如果不是整除就把 m加進sum
+			sum+=m;	
+		}
+		
+		if(n/2==1) { //結尾 n=1 把m在乘2 加進sum (因為如果不乘2 最後m會少乘一次2 就結束)
+			n /=2;
+			m *=2;
+			sum+=m;
+			System.out.println("n="+n+", m="+m);
+			is = false;
+		}
+	}
+	
+	System.out.println(sum);
+	
+}
+}

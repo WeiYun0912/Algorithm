@@ -1,0 +1,27 @@
+# -*- coding: cp950 -*-
+
+def Euclid(m,n):
+    i= 1
+    while n!=0:
+        r = m%n
+        m = n
+        n = r
+        print "第"+str(i)+"回合 m ="+str(m)+",n = "+str(n)+", r = "+str(r)
+        i+=1
+    return m    
+
+m = input("請輸入m:")
+n = input("請輸入n:")
+
+
+print str(m)+" 和 "+str(n)+"的最大公因數為"+str(Euclid(m,n))
+#轉str是為了讓字能正常顯示
+
+
+#m = 12 , n = 8
+##while n != 0 :
+##    r = m/n #12/8
+##    m=n     #
+##    n=r
+##    print m
+##
